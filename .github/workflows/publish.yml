@@ -14,5 +14,5 @@ jobs:
       - name: Build the hello-docker Docker image
         run: |
           docker build . --tag ghcr.io/${{ secrets.USER_NAME }}/docker-image-builder-test:latest
-          docker run ghcr.io/shanelkapramuditha/docker-image-builder-test:latest
-          docker push ghcr.io/shanelkapramuditha/docker-image-builder-test:latest
+          docker run ghcr.io/${{ secrets.USER_NAME }}/docker-image-builder-test:latest
+          docker push ghcr.io/${{ secrets.USER_NAME }}/docker-image-builder-test:latest
